@@ -1,5 +1,5 @@
 import React from "react";
-import ArrayTraverse from "./files/Array_traverse";
+import ArrayTraverse from "./files/ArrayTraverse";
 
 const App = () => {
   return (

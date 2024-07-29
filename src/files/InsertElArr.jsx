@@ -6,6 +6,18 @@ const InsertElArr = () => {
 
   let data = [60, 30, 10, 67, 40];
 
+  // const handleClick = () => {
+  //   for (let i = data.length - 1; i >= 0; i--) {
+  //     if (i >= positions) {
+  //       data[i + 1] = data[i];
+  //       if (i == positions) {
+  //         data[i] = parseInt(elements);
+  //       }
+  //     }
+  //   }
+  //   console.log("dynamic data: ", data);
+  // };
+
   const handleClick = () => {
     for (let i = data.length - 1; i >= 0; i--) {
       if (i >= positions) {
@@ -15,9 +27,10 @@ const InsertElArr = () => {
         }
       }
     }
-    console.log("dynamic data: ", data);
+    console.log("modified array: ", data);
   };
 
+  
   return (
     <div>
       <input

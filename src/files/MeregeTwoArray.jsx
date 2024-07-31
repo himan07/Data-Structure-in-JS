@@ -36,6 +36,56 @@ const MeregeTwoArray = () => {
 
   console.log("mereged sorted array: ", data3);
 
+  // leetcode problem
+
+  /**
+   * @param {number[]} nums1
+   * @param {number} m
+   * @param {number[]} nums2
+   * @param {number} n
+   * @return {void} 
+   */
+  var merge = function (nums1, m, nums2, n) {
+    let nums1Copy = nums1.slice(0, m);
+    console.log("copied elements", nums1Copy);
+
+    let p1 = 0;
+    let p2 = 0;
+    let p = 0;
+
+    while (p1 < m && p2 < n) {
+      if (nums1Copy[p1] < nums2[p2]) {
+        nums1[p] = nums1Copy[p1];
+        p1++;
+      } else {
+        nums1[p] = nums2[p2];
+        p2++;
+      }
+      p++;
+    }
+
+    while (p1 < m) {
+      nums1[p] = nums1Copy[p1];
+      p1++;
+      p++;
+    }
+
+    while (p2 < n) {
+      nums1[p] = nums2[p2];
+      p2++;
+      p++;
+    }
+  };
+
+  // Example usage:
+  let nums1 = [1, 2, 3, 0, 0, 0];
+  let m = 3;
+  let nums2 = [2, 5, 6];
+  let n = 3;
+
+  merge(nums1, m, nums2, n);
+  console.log(nums1); 
+
   return <div>MeregeTwoArray</div>;
 };
 

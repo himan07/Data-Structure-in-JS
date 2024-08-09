@@ -162,3 +162,119 @@
     - **Problem:** Given an array and a sum, find all pairs of elements that add up to the sum.
     - **Example:** Input: `[1, 2, 3, 4, 3]`, Sum: `6`. Output: `[(2, 4), (3, 3)]`.
 
+
+    <!-- Problem based on nested arrays -->
+
+
+Very Easy
+Problem: Given the array [[1, 2], [3, 4]], find the sum of all the numbers.
+
+Output: 10
+Problem: Given the array [[5, 6], [7, 8]], find the number of elements in the array.
+
+Output: 4
+Problem: Given the array [[1, 2, 3], [4, 5, 6]], find the length of the first sub-array.
+
+Output: 3
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the value at position [2][1].
+
+Output: 6
+Problem: Given the array [[9, 8], [7, 6]], find the maximum value.
+
+Output: 9
+Easy
+Problem: Given the array [[1, 2], [3, 4]], transpose it to [[1, 3], [2, 4]].
+
+Output: [[1, 3], [2, 4]]
+Problem: Given the array [[10, 20], [30, 40]], find the average of all the numbers.
+
+Output: 25
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], flatten it to [1, 2, 3, 4, 5, 6].
+
+Output: [1, 2, 3, 4, 5, 6]
+Problem: Given the array [[1], [2], [3]], find the sum of all the first elements.
+
+Output: 6
+Problem: Given the array [[10, 20], [30, 40]], replace each number with its square.
+
+Output: [[100, 400], [900, 1600]]
+Medium
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the sum of each sub-array and return [3, 7, 11].
+
+Output: [3, 7, 11]
+Problem: Given the array [[1, 2, 3], [4, 5, 6]], find the maximum value in each sub-array and return [3, 6].
+
+Output: [3, 6]
+Problem: Given the array [[1, [2, 3]], [4, [5, 6]]], flatten it to [1, 2, 3, 4, 5, 6].
+
+Output: [1, 2, 3, 4, 5, 6]
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the average of each sub-array and return [1.5, 3.5, 5.5].
+
+Output: [1.5, 3.5, 5.5]
+Problem: Given the array [[1, 2], [3, 4, 5], [6, 7]], make each sub-array of equal length by padding with 0 and return [[1, 2, 0], [3, 4, 5], [6, 7, 0]].
+
+Output: [[1, 2, 0], [3, 4, 5], [6, 7, 0]]
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the array of sums of elements of each sub-array in reverse order.
+
+Output: [11, 7, 3]
+Problem: Given the array [[1, 2], [3, 4]], return a new array with each number doubled.
+
+Output: [[2, 4], [6, 8]]
+Problem: Given the array [[5, 10, 15], [20, 25, 30]], find the sum of the diagonal elements [5, 25].
+
+Output: 30
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the product of all elements.
+
+Output: 720
+Problem: Given the array [[1, 2], [3, 4]], find the smallest number in the entire array.
+
+Output: 1
+Hard
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], return an array with the sums of each column.
+
+Output: [9, 12]
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the array sorted by the sum of the sub-arrays in descending order.
+
+Output: [[5, 6], [3, 4], [1, 2]]
+Problem: Given the array [[1, 2], [3, 4, 5], [6]], return the array with the longest sub-array's length.
+
+Output: 3
+Problem: Given the array [[1, [2, [3]]], [4, [5, 6]], [7]], flatten it to [1, 2, 3, 4, 5, 6, 7].
+
+Output: [1, 2, 3, 4, 5, 6, 7]
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the sum of all elements in the anti-diagonal [2, 3, 6].
+
+Output: 11
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the median value of all elements.
+
+Output: 3.5
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], rotate it 90 degrees clockwise.
+
+Output: [[5, 3, 1], [6, 4, 2]]
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the difference between the largest and smallest numbers.
+
+Output: 5
+Problem: Given the array [[1, [2, 3]], [4, [5, [6]]]], return the number of elements after flattening.
+
+Output: 6
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], replace each number with its factorial.
+
+Output: [[1, 2], [6, 24], [120, 720]]
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the sub-array with the highest sum.
+
+Output: [5, 6]
+Problem: Given the array [[1, 2, 3], [4, 5, 6], [7, 8, 9]], return the array with each number incremented by 1.
+
+Output: [[2, 3, 4], [5, 6, 7], [8, 9, 10]]
+Problem: Given the array [[2, 4], [6, 8], [10, 12]], return the array with the average of each sub-array.
+
+Output: [3, 7, 11]
+Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the product of all the numbers divided by the number of elements.
+
+Output: 4.8
+Problem: Given the array [[5, 2, 9], [1, 6, 3]], find the second smallest number.
+
+Output: 2
+Problem: Given the array [[1, [2, [3, [4]]]], [5, 6]], flatten it and return the array sorted in ascending order.
+
+Output: [1, 2, 3, 4, 5, 6]

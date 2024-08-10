@@ -167,7 +167,7 @@
 
 
 Very Easy
-Problem: Given the array [[1, 2], [3, 4]], find the sum of all the numbers.
+Problem: Given the array  [[1, 2], [3, 4]], find the sum of all the numbers.
 
 Output: 10
 Problem: Given the array [[5, 6], [7, 8]], find the number of elements in the array.
@@ -276,5 +276,4 @@ Problem: Given the array [[5, 2, 9], [1, 6, 3]], find the second smallest number
 
 Output: 2
 Problem: Given the array [[1, [2, [3, [4]]]], [5, 6]], flatten it and return the array sorted in ascending order.
-
 Output: [1, 2, 3, 4, 5, 6]

@@ -65,6 +65,12 @@ const DelElement = () => {
 
   DelOcuurancesEl([3, 5, 7, 3, 9, 3]);
 
+
+  // Problem: Given an array [1, 3, 5, 3, 7, 3], delete the first occurrence of the element 3.
+  
+   
+  
+
   return <div>DelElement</div>;
 };
 

@@ -10,8 +10,8 @@ const App = () => {
   return (
     <div>
       {/* <ArrayTraverse /> */}
-      {/* <DelElement /> */}
-      <InsertElArr />
+      <DelElement />
+      {/* <InsertElArr /> */}
       {/* <MeregeTwoArray /> */}
       {/* <SearchEl /> */}
       {/* <Problem /> */}

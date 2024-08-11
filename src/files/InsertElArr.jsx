@@ -122,7 +122,7 @@ const InsertElArr = () => {
     console.log("updated array: ", newArr);
   };
 
-  insertElementMaintainingOrder(newArr, 8)
+  insertElementMaintainingOrder(newArr, 8);
 
   return <div>InsertElArr</div>;
 };

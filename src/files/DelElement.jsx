@@ -1,65 +1,71 @@
-import React, { useState } from "react";
+import React from "react";
 
 const DelElement = () => {
-  const [positions, setPositions] = useState();
-
-  let data = [2, 5, 6, 80, 20, 40, 90];
-
-  const handleClick = () => {
-    let position = parseInt(positions);
-    for (let i = position; i < data.length - 1; i++) {
-      data[i] = data[i + 1];
+  function deleteEl(arr) {
+    let position = 3;
+    for (let i = position; i < arr.length - 1; i++) {
+      arr[i] = arr[i + 1];
     }
-    data.length = data.length - 1;
-    console.log("transformed arr; ", data);
+    arr.length = arr.length - 1;
+    // console.log("Deleted Element", arr);
+  }
+
+  let data = [20, 30, 40, 50, 76, 90];
+  deleteEl(data);
+
+  // Given an array [1, 2, 3, 4, 5], delete the last element of the array.
+  function delLastEl(arr) {
+    let position = arr.length - 1;
+    for (let i = position; i < arr.length - 1; i++) {
+      arr[i] = arr[i + 1];
+    }
+    arr.length = arr.length - 1;
+    console.log("modified array: ", arr);
+  }
+
+  let newData = [1, 2, 3, 4, 5];
+  delLastEl(newData);
+
+  // Problem: Given an array [6, 7, 8, 9], delete the first element of the array.
+
+  function delFirstEl(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+      array[i] = array[i + 1];
+    }
+    array.length = array.length - 1;
+    console.log("removed first element: ", array);
+  }
+
+  delFirstEl([6, 7, 8, 9]);
+
+  // Problem: Given an array [10, 20, 30, 40, 50], delete the element at index 2.
+
+  const delIndexEl = (arr) => {
+    let index = 2;
+    for (let i = index; i < arr.length - 1; i++) {
+      arr[i] = arr[i + 1];
+    }
+    arr.length = arr.length - 1;
+    console.log("updated array: ", arr);
   };
 
-  function removeEle(nums, val) {
-    let k = 0;
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] !== val) {
-        nums[k] = nums[i];
-        k++;
-      }
-    }
+  delIndexEl([10, 20, 30, 40, 50]);
 
-    nums.length = nums.length - 1;
-    console.log(nums);
-    return k;
+  // Problem: Given an array [3, 5, 7, 3, 9, 3], delete all occurrences of the element 3.
+
+  function DelOcuurancesEl(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== 3) {
+        newArr.push(arr[i]);
+      }
+      console.log("remove occurances", newArr);
+    }
   }
 
-  let arr = [1, 2, 3, 5, 8, 7, 9];
-  removeEle(arr, 7);
+  DelOcuurancesEl([3, 5, 7, 3, 9, 3]);
 
-  // or another approach to solve this problem
-
-  function removeElement(nums, val) {
-    let index = 0;
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] !== val) {
-        nums[index] = nums[i];
-        index++;
-      }
-      nums.length = index;
-      return nums;
-    }
-    console.log(nums)
-  }
-
-  removeElement(arr, 9);
-
-  return (
-    <div>
-      <input
-        type="text"
-        placeholder="enter the position to remove the element! "
-        onChange={(e) => setPositions(e.target.value)}
-        style={{ width: "300px" }}
-      />
-      &nbsp;
-      <button onClick={handleClick}> Remove Element</button>
-    </div>
-  );
+  return <div>DelElement</div>;
 };
 
 export default DelElement;

@@ -108,6 +108,46 @@ Output: The index of the smallest element in the array that is greater than the 
 
   findSmallest([4, 12, 7, 15, 20], 10);
 
+  /*
+  Problem 5: Search for Largest Element Smaller than Target
+Array: [5, 3, 7, 2, 6, 9, 4]
+Target Value: 6
+Output: The index of the largest element in the array that is smaller than the target value. If no such element exists, return -1.
+  */
+
+  function findLargest(arr, element) {
+    let largest = -1;
+    let indexOfLargest = -1;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < element && arr[i] > largest) {
+        largest = arr[i];
+        indexOfLargest = i;
+      }
+    }
+    console.log("largest: ", indexOfLargest);
+    return indexOfLargest;
+  }
+  findLargest([5, 3, 7, 2, 6, 9, 4], 6);
+
+  /*
+  Problem 6: Count Occurrences of Target
+  Array: [3, 3, 4, 5, 3, 6, 3]
+  Target Value: 3
+  Output: The count of occurrences of the target value in the array.
+  */
+
+  function countOcc(arr, ele) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === ele) {
+        count++;
+      }
+    }
+    console.log("count: ", count);
+  }
+
+  countOcc([3, 3, 4, 5, 3, 6, 3], 3);
+
   return <div></div>;
 };
 

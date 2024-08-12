@@ -75,7 +75,7 @@ Output: The index of the last occurrence of the target value. If not found, retu
 
   function findLastOccurances(arr, ele) {
     let index = undefined;
-    for (let i = arr.length-1 ; i >= 0; i--) {
+    for (let i = arr.length - 1; i >= 0; i--) {
       if (arr[i] === ele) {
         index = i;
         break;
@@ -87,6 +87,27 @@ Output: The index of the last occurrence of the target value. If not found, retu
   }
 
   findLastOccurances([9, 14, 15, 21, 15, 30, 15], 15);
+
+  /*
+  Search for Smallest Element Greater than Target
+
+Array: [4, 12, 7, 15, 20]
+Target Value: 10
+Output: The index of the smallest element in the array that is greater than the target value. If no such element exists, return -1.
+  */
+
+  function findSmallest(arr, target) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < target) {
+        newArr.push(arr[i]);
+      }
+    }
+    console.log("smallest: ", newArr);
+  }
+
+  findSmallest([4, 12, 7, 15, 20], 10);
+
   return <div></div>;
 };
 

@@ -66,23 +66,39 @@ const DelElement = () => {
   const removeFirstEl = (arr, value) => {
     let position = -1;
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === value) {
-            position = i;
-            break;
-        }
+      if (arr[i] === value) {
+        position = i;
+        break;
+      }
     }
     if (position !== -1) {
-        for (let i = position; i < arr.length - 1; i++) {
-            arr[i] = arr[i + 1];
-        }
-        arr.length = arr.length - 1; 
+      for (let i = position; i < arr.length - 1; i++) {
+        arr[i] = arr[i + 1];
+      }
+      arr.length = arr.length - 1;
     }
 
     console.log("Updated array:", arr);
-};
+  };
 
-removeFirstEl([1, 3, 5, 3, 7, 3], 3);
+  removeFirstEl([1, 3, 5, 3, 7, 3], 3);
 
+  // Problem: Given an array [10, 20, 30, 40, 50], delete the elements from index 1 to 3 (inclusive).
+
+  function delElementToRange(arr) {
+    let startIndex = 1;
+    let endIndex = 3;
+    let removeIndex = endIndex - startIndex + 1;
+
+    for (let i = startIndex; i < arr.length - removeIndex; i++) {
+      arr[i] = arr[i + removeIndex];
+    }
+
+    arr.length = arr.length - removeIndex;
+    console.log("Array: ", arr);
+  }
+
+  delElementToRange([10, 20, 30, 40, 50]);
 
   return <div>DelElement</div>;
 };

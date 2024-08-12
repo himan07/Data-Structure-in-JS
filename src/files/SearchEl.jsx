@@ -148,26 +148,49 @@ Output: The index of the largest element in the array that is smaller than the t
 
   countOcc([3, 3, 4, 5, 3, 6, 3], 3);
 
-
   /*
     Problem 7: Find Index of Closest Element
     Array: [1, 5, 9, 12, 15]
     Target Value: 10
     Output: The index of the element in the array that is closest to the target value. If multiple elements are equally close, return the index of the first one.
-  */ 
+  */
 
-    function findclosest(arr, ele){
-      let closestEl = -1;
-      for(let i = 0 ; i< arr.length; i++){
-        if(arr[i] < ele && arr[i] > closestEl){
-          closestEl = arr[i]
+  function findclosest(arr, ele) {
+    let closestEl = -1;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < ele && arr[i] > closestEl) {
+        closestEl = arr[i];
+      }
+    }
+    console.log("closestEl: ", closestEl);
+  }
+
+  findclosest([1, 5, 9, 12, 15], 10);
+
+  /*
+Problem 8: Search for Multiple Targets
+Array: [8, 15, 22, 37, 42, 55]
+Targets: [15, 37, 42]
+Output: An array of indices for each target in the array. If a target is not found, return -1 for that target.
+
+*/
+
+  function findMultipleElement(arr, targets) {
+    let position = undefined;
+    let result = [];
+    for (let i = 0; i < targets.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] === targets[i]) {
+          result.push(arr[i]);
+        }else{
+          return -1;
         }
       }
-      console.log("closestEl: ", closestEl)
     }
+    console.log("position of multiple searched elements: ", result);
+  }
 
-    findclosest([1, 5, 9, 12, 15], 10)
-
+  findMultipleElement([8, 15, 22, 37, 42, 55], [15, 37, 42]);
   return <div></div>;
 };
 

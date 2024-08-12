@@ -148,6 +148,26 @@ Output: The index of the largest element in the array that is smaller than the t
 
   countOcc([3, 3, 4, 5, 3, 6, 3], 3);
 
+
+  /*
+    Problem 7: Find Index of Closest Element
+    Array: [1, 5, 9, 12, 15]
+    Target Value: 10
+    Output: The index of the element in the array that is closest to the target value. If multiple elements are equally close, return the index of the first one.
+  */ 
+
+    function findclosest(arr, ele){
+      let closestEl = -1;
+      for(let i = 0 ; i< arr.length; i++){
+        if(arr[i] < ele && arr[i] > closestEl){
+          closestEl = arr[i]
+        }
+      }
+      console.log("closestEl: ", closestEl)
+    }
+
+    findclosest([1, 5, 9, 12, 15], 10)
+
   return <div></div>;
 };
 

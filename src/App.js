@@ -5,16 +5,26 @@ import MeregeTwoArray from "./files/MeregeTwoArray.jsx";
 import SearchEl from "./files/SearchEl.jsx";
 import InsertElArr from "./files/InsertElArr.jsx";
 import Problem from "./files/Problem.jsx";
+import CircleInCircle from "./files/ProgrammingCom.jsx";
 
 const App = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop:"200px"
+      }}
+    >
       {/* <ArrayTraverse /> */}
       <DelElement />
       {/* <InsertElArr /> */}
       {/* <MeregeTwoArray /> */}
       {/* <SearchEl /> */}
       {/* <Problem /> */}
+      <CircleInCircle />
     </div>
   );
 };

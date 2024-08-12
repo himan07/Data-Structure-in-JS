@@ -27,7 +27,6 @@ const DelElement = () => {
   delLastEl(newData);
 
   // Problem: Given an array [6, 7, 8, 9], delete the first element of the array.
-
   function delFirstEl(array) {
     for (let i = 0; i < array.length - 1; i++) {
       array[i] = array[i + 1];
@@ -39,7 +38,6 @@ const DelElement = () => {
   delFirstEl([6, 7, 8, 9]);
 
   // Problem: Given an array [10, 20, 30, 40, 50], delete the element at index 2.
-
   const delIndexEl = (arr) => {
     let index = 2;
     for (let i = index; i < arr.length - 1; i++) {
@@ -52,7 +50,6 @@ const DelElement = () => {
   delIndexEl([10, 20, 30, 40, 50]);
 
   // Problem: Given an array [3, 5, 7, 3, 9, 3], delete all occurrences of the element 3.
-
   function DelOcuurancesEl(arr) {
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
@@ -65,11 +62,27 @@ const DelElement = () => {
 
   DelOcuurancesEl([3, 5, 7, 3, 9, 3]);
 
-
   // Problem: Given an array [1, 3, 5, 3, 7, 3], delete the first occurrence of the element 3.
-  
-   
-  
+  const removeFirstEl = (arr, value) => {
+    let position = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            position = i;
+            break;
+        }
+    }
+    if (position !== -1) {
+        for (let i = position; i < arr.length - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr.length = arr.length - 1; 
+    }
+
+    console.log("Updated array:", arr);
+};
+
+removeFirstEl([1, 3, 5, 3, 7, 3], 3);
+
 
   return <div>DelElement</div>;
 };

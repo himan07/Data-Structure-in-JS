@@ -19,10 +19,10 @@ const App = () => {
       }}
     >
       {/* <ArrayTraverse /> */}
-      <DelElement />
+      {/* <DelElement /> */}
       {/* <InsertElArr /> */}
       {/* <MeregeTwoArray /> */}
-      {/* <SearchEl /> */}
+      <SearchEl />
       {/* <Problem /> */}
       <CircleInCircle />
     </div>

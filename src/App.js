@@ -21,8 +21,8 @@ const App = () => {
       {/* <ArrayTraverse /> */}
       {/* <DelElement /> */}
       {/* <InsertElArr /> */}
-      {/* <MeregeTwoArray /> */}
-      <SearchEl />
+      <MeregeTwoArray />
+      {/* <SearchEl /> */}
       {/* <Problem /> */}
       <CircleInCircle />
     </div>

@@ -6,6 +6,7 @@ import SearchEl from "./files/SearchEl.jsx";
 import InsertElArr from "./files/InsertElArr.jsx";
 import Problem from "./files/Problem.jsx";
 import CircleInCircle from "./files/ProgrammingCom.jsx";
+import ArrMergeWhile from "./files/ArrMergeWhile.jsx";
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
       {/* <ArrayTraverse /> */}
       {/* <DelElement /> */}
       {/* <InsertElArr /> */}
-      <MeregeTwoArray />
+      {/* <MeregeTwoArray /> */}
+      <ArrMergeWhile />
       {/* <SearchEl /> */}
       {/* <Problem /> */}
       <CircleInCircle />

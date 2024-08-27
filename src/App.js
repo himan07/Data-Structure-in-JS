@@ -7,6 +7,7 @@ import InsertElArr from "./files/InsertElArr.jsx";
 import Problem from "./files/Problem.jsx";
 import CircleInCircle from "./files/ProgrammingCom.jsx";
 import ArrMergeWhile from "./files/ArrMergeWhile.jsx";
+import ArraySorting from "./files/arraySorting.jsx";
 
 const App = () => {
   return (
@@ -16,14 +17,15 @@ const App = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginTop:"200px"
+        marginTop: "200px",
       }}
     >
       {/* <ArrayTraverse /> */}
       {/* <DelElement /> */}
       {/* <InsertElArr /> */}
       {/* <MeregeTwoArray /> */}
-      <ArrMergeWhile />
+      {/* <ArrMergeWhile /> */}
+      <ArraySorting />
       {/* <SearchEl /> */}
       {/* <Problem /> */}
       <CircleInCircle />

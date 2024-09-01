@@ -8,6 +8,7 @@ import Problem from "./files/Problem.jsx";
 import CircleInCircle from "./files/ProgrammingCom.jsx";
 import ArrMergeWhile from "./files/ArrMergeWhile.jsx";
 import ArraySorting from "./files/arraySorting.jsx";
+import JavaScriptTut from "./files/JavaScriptTut.jsx";
 
 const App = () => {
   return (
@@ -25,10 +26,11 @@ const App = () => {
       {/* <InsertElArr /> */}
       {/* <MeregeTwoArray /> */}
       {/* <ArrMergeWhile /> */}
-      <ArraySorting />
+      {/* <ArraySorting /> */}
       {/* <SearchEl /> */}
       {/* <Problem /> */}
       <CircleInCircle />
+      <JavaScriptTut />
     </div>
   );
 };

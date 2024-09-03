@@ -25,12 +25,12 @@ const App = () => {
       {/* <DelElement /> */}
       {/* <InsertElArr /> */}
       {/* <MeregeTwoArray /> */}
-      {/* <ArrMergeWhile /> */}
+      <ArrMergeWhile />
       {/* <ArraySorting /> */}
       {/* <SearchEl /> */}
       {/* <Problem /> */}
       <CircleInCircle />
-      <JavaScriptTut />
+      {/* <JavaScriptTut /> */}
     </div>
   );
 };

@@ -134,38 +134,72 @@ nums2.length == n
 Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 */
 
-function merge(nums1, m, nums2, n) {
-  let i = m - 1; 
-  let j = n - 1; 
-  let k = m + n - 1; 
+  function merge(nums1, m, nums2, n) {
+    let i = m - 1;
+    let j = n - 1;
+    let k = m + n - 1;
 
-  while (i >= 0 && j >= 0) {
+    while (i >= 0 && j >= 0) {
       if (nums1[i] > nums2[j]) {
-          nums1[k] = nums1[i];
-          i--;
+        nums1[k] = nums1[i];
+        i--;
       } else {
-          nums1[k] = nums2[j];
-          j--;
+        nums1[k] = nums2[j];
+        j--;
       }
       k--;
-  }
+    }
 
-  while (j >= 0) {
+    while (j >= 0) {
       nums1[k] = nums2[j];
       j--;
       k--;
+    }
   }
-}
 
-// Example Usage:
-let nums1 = [1, 2, 3, 0, 0, 0];
-let m = 3;
-let nums2 = [2, 5, 6];
-let n = 3;
+  // Example Usage:
+  let nums1 = [1, 2, 3, 0, 0, 0];
+  let m = 3;
+  let nums2 = [2, 5, 6];
+  let n = 3;
 
-merge(nums1, m, nums2, n);
-console.log("leetcode problem solution: ",nums1); 
+  merge(nums1, m, nums2, n);
+  console.log("leetcode problem solution: ", nums1);
 
+  // merge two sorted array
+
+  function twoSortedArray(arr1, arr2) {
+    let arr3 = [];
+    let i = 0;
+    let j = 0;
+    let k = 0;
+
+    while (i < arr1.length && j < arr2.length) {
+      if (arr1[i] < arr2[j]) {
+        arr3[k] = arr1[i];
+        i++;
+      } else {
+        arr3[k] = arr2[j];
+        j++;
+      }
+      k++;
+    }
+    while (i < arr1.length) {
+      arr3[k] = arr1[i];
+      i++;
+      k++;
+    }
+
+    while (j < arr2.length) {
+      arr3[k] = arr2[j];
+      j++;
+      k++;
+    }
+
+    console.log("arr3", arr3);
+  }
+
+  twoSortedArray([1, 3, 5], [2, 4, 6]);
 
   return <div>Merge two array with while loop</div>;
 };

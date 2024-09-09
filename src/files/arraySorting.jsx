@@ -86,23 +86,59 @@ const ArraySorting = () => {
 
   findIndexOfElement([5, 10, 15, 20, 25], 20);
 
-
   // Sort the given array in descending order without using any built-in functions.
 
   const sortDescOrder = (arr) => {
-    for(let i = 0; i< arr.length; i++){
-      for(let j = 0; j < arr.length; j++){
-        if(arr[j] < arr[j+1]){
-          let temp = arr[j]
-          arr[j] = arr[j+1]
-          arr[j+1] = temp;
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] < arr[j + 1]) {
+          let temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
         }
       }
     }
-    console.log("array in descending order: ", arr)
-  }
+    console.log("array in descending order: ", arr);
+  };
 
-  sortDescOrder([12, 45, 2, 67, 21])
+  sortDescOrder([12, 45, 2, 67, 21]);
+
+  // Given two arrays (not necessarily sorted), merge them and remove any duplicate values. Return the new array.
+  const arr1 = [1, 3, 5, 7];
+  const arr2 = [3, 6, 8, 1];
+
+  const removeDuplicates = (arr1, arr2) => {
+    let i = 0;
+    let j = 0;
+    let k = 0;
+    let arr3 = [];
+    let result = [];
+
+    while (i < arr1.length && j < arr2.length) {
+      if (arr1[i] < arr2[j]) {
+        arr3[k] = arr1[i];
+        i++;
+      } else {
+        arr3[k] = arr2[j];
+        j++;
+      }
+      k++;
+    }
+    while (i < arr1.length) {
+      arr3[k] = arr1[i];
+      i++;
+      k++;
+    }
+    while (j < arr2[j]) {
+      arr3[k] = arr2[j];
+      j++;
+      k++;
+    }
+    arr3.map((x) => (!result.includes(x) ? result.push(x) : ""));
+    console.log("final result: ", result);
+  };
+  removeDuplicates(arr1, arr2)
+
 
   return <div>arraySorting</div>;
 };

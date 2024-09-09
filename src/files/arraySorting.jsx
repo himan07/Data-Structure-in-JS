@@ -68,6 +68,24 @@ const ArraySorting = () => {
 
   mergeTwoArray(data1, data2);
 
+  // Problem:Given an array of integers, search for a specific element in the array without using JavaScript's
+  // built-in indexOf() or includes() functions. Return the index of the element if found, otherwise return -1.
+
+  function findIndexOfElement(arr, ele) {
+    let index = undefined;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === ele) {
+        index = i;
+        break;
+      } else {
+        index = -1;
+      }
+    }
+    console.log("element index: ", index);
+  }
+
+  findIndexOfElement([5, 10, 15, 20, 25], 20);
+
   return <div>arraySorting</div>;
 };
 

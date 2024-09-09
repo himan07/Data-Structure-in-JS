@@ -25,8 +25,8 @@ const App = () => {
       {/* <DelElement /> */}
       {/* <InsertElArr /> */}
       {/* <MeregeTwoArray /> */}
-      <ArrMergeWhile />
-      {/* <ArraySorting /> */}
+      {/* <ArrMergeWhile /> */}
+      <ArraySorting />
       {/* <SearchEl /> */}
       {/* <Problem /> */}
       <CircleInCircle />

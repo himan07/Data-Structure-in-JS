@@ -1,30 +1,22 @@
 import React from "react";
 
 const ArraySorting = () => {
-  // destructuring the elements from arrays
-
-  const arr = [2, 3, 4];
-  const [x, y, z] = arr;
-  console.log("destructured elements: ", x, y, z);
-  const restaurent = {
-    name: "Classino Italino",
-    location: "India, France, China, Itally",
-    categories: ["Itallian", "Pizzaria", "Vegetarian", "Organic"],
-    starterMenu: ["Foccacia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
-    mainMenu: ["Pizza", "Pasta", "Risotto"],
+  // Bubble sorting
+  const sortedArry = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] > arr[j + 1]) {
+          let value = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = value;
+        }
+      }
+    }
+    console.log("sorted value: ", arr);
   };
 
-  let [main, secondary] = restaurent.categories;
-
- [main, secondary] = [secondary, main]
-
-  // switching the elements
-
-  // const temp = main;
-  // main = secondary;
-  // secondary = temp;
-  console.log("switched element: ",main, secondary)
-
+  sortedArry([40, 30, 12, 25]);
+  
   return <div>arraySorting</div>;
 };
 

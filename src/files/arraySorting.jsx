@@ -86,6 +86,24 @@ const ArraySorting = () => {
 
   findIndexOfElement([5, 10, 15, 20, 25], 20);
 
+
+  // Sort the given array in descending order without using any built-in functions.
+
+  const sortDescOrder = (arr) => {
+    for(let i = 0; i< arr.length; i++){
+      for(let j = 0; j < arr.length; j++){
+        if(arr[j] < arr[j+1]){
+          let temp = arr[j]
+          arr[j] = arr[j+1]
+          arr[j+1] = temp;
+        }
+      }
+    }
+    console.log("array in descending order: ", arr)
+  }
+
+  sortDescOrder([12, 45, 2, 67, 21])
+
   return <div>arraySorting</div>;
 };
 

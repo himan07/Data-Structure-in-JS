@@ -29,9 +29,23 @@ const ArraySorting = () => {
     }
     console.log("sorted asc value: ", arr);
   };
+  sortArrAsc([34, 7, 23, 32, 5, 62]);
 
-  sortArrAsc([34, 7, 23, 32, 5, 62])
+  // Given two sorted arrays, merge them into one sorted array without using any built-in array merge or sort functions.
+  const data1 = [1, 3, 5, 7];
+  const data2 = [2, 4, 6, 8];
 
+  const mergeTwoArray = (arr1, arr2) => {
+    let arr3 = [];
+    let i = 0;
+    let j = 0;
+    let k = 0;
+    
+
+    console.log("mergedArr: ", arr3);
+  };
+
+  mergeTwoArray(data1, data2);
 
   return <div>arraySorting</div>;
 };

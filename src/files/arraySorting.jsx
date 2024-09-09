@@ -137,9 +137,32 @@ const ArraySorting = () => {
     arr3.map((x) => (!result.includes(x) ? result.push(x) : ""));
     console.log("final result: ", result);
   };
-  removeDuplicates(arr1, arr2)
+  removeDuplicates(arr1, arr2);
 
+  // Problem:
+  // Delete all occurrences of a specified element from an array without using filter() or splice().
+  const arr = [2, 4, 2, 6, 2, 8];
+  const elementToRemove = 2;
 
+  const removeFirstEl = (arr, value) => {
+    let position = -1;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === value) {
+        position = i;
+        break;
+      }
+    }
+    if (position !== -1) {
+      for (let i = position; i < arr.length - 1; i++) {
+        arr[i] = arr[i + 1];
+      }
+      arr.length = arr.length - 1;
+    }
+
+    console.log("Updated array:", arr);
+  };
+
+  removeFirstEl(arr, elementToRemove);
   return <div>arraySorting</div>;
 };
 

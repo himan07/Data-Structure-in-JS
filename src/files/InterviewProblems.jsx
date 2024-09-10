@@ -21,11 +21,37 @@ const InterviewProblems = () => {
         largest = arr[i];
       }
     }
-    console.log("Largest No: ", largest); 
+    console.log("Largest No: ", largest);
   };
 
   findLargest([1, 3, 4, 9, 8, 12, 2, 50]);
 
+  // map and filter function
+
+  const data = [
+    { id: 1, title: "first" },
+    { id: 2, title: "second" },
+    { id: 3, title: "third" },
+    { id: 4, title: "fourth" },
+  ];
+
+  data.map((item, id) => {
+    console.log(item.title)
+  });
+
+let moduleData = data.filter(el => el.id %2 === 0)
+console.log("filtered Data :", moduleData)
+
+const jedi={ 
+id:1,
+name: 'Luke Skywalker',
+Lightsaber:true, 
+species:'Human'
+}
+
+const {name:jediName, species, ...rest} = jedi
+console.log("destructured object values: ",jediName, species)
+console.log("rest: ", rest)
   return <div>InterviewProblems</div>;
 };
 

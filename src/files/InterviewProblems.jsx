@@ -36,22 +36,32 @@ const InterviewProblems = () => {
   ];
 
   data.map((item, id) => {
-    console.log(item.title)
+    console.log(item.title);
   });
 
-let moduleData = data.filter(el => el.id %2 === 0)
-console.log("filtered Data :", moduleData)
+  let moduleData = data.filter((el) => el.id % 2 === 0);
+  console.log("filtered Data :", moduleData);
 
-const jedi={ 
-id:1,
-name: 'Luke Skywalker',
-Lightsaber:true, 
-species:'Human'
-}
+  const jedi = {
+    id: 1,
+    name: "Luke Skywalker",
+    Lightsaber: true,
+    species: "Human",
+  };
 
-const {name:jediName, species, ...rest} = jedi
-console.log("destructured object values: ",jediName, species)
-console.log("rest: ", rest)
+  const { name: jediName, species, ...rest } = jedi;
+  console.log("destructured object values: ", jediName, species);
+  console.log("rest: ", rest);
+
+  function a(x) {
+    return function b(y) {
+      return function c(z) {
+        let result = x + y + z;
+        console.log("result: ", result);
+      };
+    };
+  }
+  a(10)(20)(30);
   return <div>InterviewProblems</div>;
 };
 

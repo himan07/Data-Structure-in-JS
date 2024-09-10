@@ -143,26 +143,44 @@ const ArraySorting = () => {
   // Delete all occurrences of a specified element from an array without using filter() or splice().
   const arr = [2, 4, 2, 6, 2, 8];
   const elementToRemove = 2;
+  let res = [];
 
   const removeFirstEl = (arr, value) => {
     let position = -1;
     for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === value) {
-        position = i;
-        break;
+      if (arr[i] !== value) {
+        // position = i;
+        // break;
+        res[i] = arr[i]
       }
     }
-    if (position !== -1) {
-      for (let i = position; i < arr.length - 1; i++) {
-        arr[i] = arr[i + 1];
-      }
-      arr.length = arr.length - 1;
-    }
+    // if (position !== -1) {
+    //   for (let i = position; i < arr.length - 1; i++) {
+    //     arr[i] = arr[i + 1];
+    //   }
+    //   arr.length = arr.length - 1;
+    // }
 
-    console.log("Updated array:", arr);
+    console.log("Updated array:", res);
   };
 
   removeFirstEl(arr, elementToRemove);
+
+
+  const searchElement = (arr, elem) => {
+    let index = undefined;
+    for(let i = 0; i < arr.length ; i++){
+      if(arr[i] == elem){
+        index = i;
+        break;
+      }else{
+        index = -1;
+      }
+    }
+    console.log("index of the element: ", index)
+  }
+
+  searchElement([2, 4, 6, 8, 10, 12], 8)
   return <div>arraySorting</div>;
 };
 

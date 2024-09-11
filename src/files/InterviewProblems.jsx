@@ -113,6 +113,30 @@ const InterviewProblems = () => {
       console.log("error", error);
     });
 
+  // Remove Duplicates from an array
+  const removeDuplicates = (arr) => {
+    let updatedArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      let isDuplicate = false;
+      for (let j = 0; j < updatedArr.length; j++) {
+        if (arr[i] === updatedArr[j]) {
+          isDuplicate = true;
+          break;
+        }
+      }
+      if (!isDuplicate) {
+        updatedArr.push(arr[i]);
+      }
+    }
+    return updatedArr;
+  };
+  
+  let arr = [1, 2, 2, 3, 4, 4, 5];
+  
+  let result = removeDuplicates(arr);
+  console.log("removed duplicates: ", result);
+  
+
   return <div>InterviewProblems</div>;
 };
 

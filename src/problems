@@ -1,279 +1,314 @@
-1. Find the length of an array.
-2. Access the first element of an array.
-3. Access the last element of an array.
-4. Add an element to the end of an array.
-5. Add an element to the beginning of an array.
-6. Remove the last element of an array.
-7. Remove the first element of an array.
-8. Find the index of a specific element in an array.
-9. Check if an array contains a specific element.
-10. Create a new array with all elements that are greater than a given value.
-11. Create a new array with all elements that are less than a given value.
-12. Create a new array with all elements that are equal to a given value.
-13. Reverse the order of elements in an array.
-14. Sort the elements of an array in ascending order.
-15. Sort the elements of an array in descending order.
-16. Remove duplicate elements from an array.
-17. Join all elements of an array into a single string, separated by a given delimiter.
-18. Split a string into an array of substrings based on a delimiter.
-19. Find the sum of all elements in an array.
-20. Find the average of all elements in an array.
-21. Find the maximum value in an array.
-22. Find the minimum value in an array.
-23. Check if all elements in an array are positive numbers.
-24. Check if any element in an array is negative.
-25. Create a new array with each element multiplied by a given number.
-26. Create a new array with each element squared.
-27. Remove all occurrences of a given value from an array.
-28. Create a new array with the elements of two arrays merged.
-29. Create a new array with the elements of one array removed from another.
-30. Find the first occurrence of an element in an array.
-31. Find the last occurrence of an element in an array.
-32. Check if an array is empty.
-33. Create an array with a given number of elements, all initialized to a specific value.
-34. Find the number of occurrences of a specific value in an array.
-35. Create a new array with each element converted to a string.
-36. Create a new array with each element converted to a number.
-37. Filter an array to include only elements that pass a given test.
-38. Map an array to a new array with transformed elements.
-39. Reduce an array to a single value based on a given operation.
-40. Flatten a nested array into a single array.
-41. Create an array of objects with properties from two separate arrays.
-42. Get the keys of an array of objects.
-43. Get the values of an array of objects.
-44. Check if two arrays are equal.
-45. Find the intersection of two arrays.
-46. Find the union of two arrays.
-47. Find the difference between two arrays.
-48. Create a new array with elements that appear in both arrays.
-49. Create a new array with elements that appear in either array.
-50. Create a new array with elements that appear in only one of the arrays.
-51. Remove every nth element from an array.
-52. Create a new array with only the unique elements from a nested array.
-53. Group array elements based on a specific property.
-54. Find the longest string in an array of strings.
-55. Find the shortest string in an array of strings.
-56. Create an array of random numbers within a specified range.
-57. Generate an array of even numbers up to a specified limit.
-58. Generate an array of odd numbers up to a specified limit.
-59. Create a new array with the length of each string in an array of strings.
-60. Find the first index where an array of numbers starts to decrease.
-61. Determine if an array is a palindrome.
-62. Create a new array that contains the squares of numbers in an array.
-63. Create a new array that contains the cubes of numbers in an array.
-64. Merge an array of objects based on a specific property.
-65. Remove empty strings from an array.
-66. Replace a specific element in an array with a new value.
-67. Create a new array by applying a function to each element of an array.
-68. Extract a slice of an array based on start and end indices.
-69. Find the average length of strings in an array of strings.
-70. Find the total number of elements in an array of arrays.
-71. Create an array of numbers from 1 to n.
-72. Check if all elements in an array are unique.
-73. Find the difference between the largest and smallest numbers in an array.
-74. Create an array of characters from a string.
-75. Create a string from an array of characters.
-76. Create a new array with elements in uppercase from an array of strings.
-77. Create a new array with elements in lowercase from an array of strings.
-78. Determine if an array contains only even numbers.
-79. Determine if an array contains only odd numbers.
-80. Create a new array with the lengths of each element in an array of strings.
-81. Merge multiple arrays into a single array.
-82. Create a new array with the elements of the original array repeated twice.
-83. Create a new array by concatenating elements of two arrays.
-84. Remove elements from an array that are less than a given value.
-85. Add a specific value to each element of an array.
-86. Create an array of indexes for the elements in a given array.
-87. Find the common elements between three arrays.
-88. Remove the last n elements from an array.
-89. Create an array where each element is a combination of elements from two arrays.
-90. Find all indices of a specific value in an array.
-91. Create an array with all elements shifted by one position.
-92. Create a new array with every other element from the original array.
-93. Find the position of a specific element in a sorted array.
-94. Create an array of prime numbers up to a given number.
-95. Calculate the product of all elements in an array.
-96. Create a new array with elements from an array that meet a certain condition.
-97. Generate a sequence of numbers based on a given step size.
-98. Create an array of objects from two arrays: one with keys and one with values.
-99. Create a new array with alternating values from two arrays.
-100. Find the frequency of each element in an array.
+Certainly! Here is a comprehensive list of 100 problems across various levels of difficulty, focusing on removing duplicates, deletion, merging, and searching algorithms. Each problem is presented with its question for clarity.
 
+### **Easy Level Problems**
 
-101.Certainly! Here are some commonly asked array-related questions in technical interviews:
+1. **Remove Duplicates from a Sorted Array**
+   - **Question:** Given a sorted array `nums`, remove duplicates in-place so that each unique element appears only once. Return the new length of the array.
 
-1. **Two Sum**
-   - **Problem:** Given an array of integers and a target value, find two numbers in the array that add up to the target value and return their indices.
-   - **Example:** Input: `[2, 7, 11, 15]`, Target: `9`. Output: `[0, 1]` (since `2 + 7 = 9`).
+2. **Remove Duplicates from an Unsorted Array**
+   - **Question:** Given an unsorted array `nums`, remove duplicates such that each element appears only once and return the new length of the array.
 
-2. **Reverse an Array**
-   - **Problem:** Reverse the elements of an array in place.
-   - **Example:** Input: `[1, 2, 3, 4, 5]`. Output: `[5, 4, 3, 2, 1]`.
+3. **Find the First Occurrence of a Target in a Sorted Array**
+   - **Question:** Given a sorted array `nums` and a target value, find the index of the first occurrence of the target value. If not found, return `-1`.
 
-3. **Find the Missing Number**
-   - **Problem:** Given an array containing `n` distinct numbers taken from `0, 1, 2, ..., n`, find the one that is missing.
-   - **Example:** Input: `[3, 0, 1]`. Output: `2`.
+4. **Find the Last Occurrence of a Target in a Sorted Array**
+   - **Question:** Given a sorted array `nums` and a target value, find the index of the last occurrence of the target value. If not found, return `-1`.
 
-4. **Move Zeros**
-   - **Problem:** Given an array, move all zeros to the end without changing the order of non-zero elements.
-   - **Example:** Input: `[0, 1, 0, 3, 12]`. Output: `[1, 3, 12, 0, 0]`.
+5. **Delete a Given Element from an Array**
+   - **Question:** Given an array `nums` and a value `val`, remove all occurrences of `val` in-place and return the new length of the array.
 
-5. **Rotate Array**
-   - **Problem:** Rotate an array to the right by `k` steps, where `k` is non-negative.
-   - **Example:** Input: `[1, 2, 3, 4, 5, 6, 7]`, `k = 3`. Output: `[5, 6, 7, 1, 2, 3, 4]`.
+6. **Search for a Target in a Sorted Array Using Binary Search**
+   - **Question:** Given a sorted array `nums` and a target value, use binary search to find the target's index. Return `-1` if the target is not found.
 
-6. **Find the Duplicates**
-   - **Problem:** Given an array of integers where each value is between `1` and `n` (inclusive) where `n` is the length of the array, find all duplicates.
-   - **Example:** Input: `[4, 3, 2, 7, 8, 2, 1, 7]`. Output: `[2, 7]`.
+7. **Find Missing Numbers in an Array of Integers**
+   - **Question:** Given an array of integers `nums` containing `n` distinct numbers in the range `[0, n]`, find all numbers in the range `[0, n]` that are not in the array.
 
-7. **Find the Maximum Product of Two Integers**
-   - **Problem:** Find the maximum product of two integers in an array.
-   - **Example:** Input: `[1, 10, -5, 3, 2]`. Output: `30` (from `10 * 3`).
+8. **Remove All Occurrences of a Given Element in an Array**
+   - **Question:** Given an array `nums` and a value `val`, remove all occurrences of `val` and return the new length of the array, modifying the array in-place.
 
-8. **Longest Consecutive Sequence**
-   - **Problem:** Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
-   - **Example:** Input: `[100, 4, 200, 1, 3, 2]`. Output: `4` (for sequence `[1, 2, 3, 4]`).
+9. **Find Duplicates in an Array of Integers**
+   - **Question:** Given an array `nums` where each integer is in the range `[1, n]` (where `n` is the size of the array), find all duplicate elements.
 
-9. **Find the Intersection of Two Arrays**
-   - **Problem:** Given two arrays, find their intersection.
-   - **Example:** Input: `[1, 2, 2, 1]` and `[2, 2]`. Output: `[2, 2]`.
+10. **Merge Two Sorted Arrays**
+    - **Question:** Given two sorted arrays `nums1` and `nums2`, merge `nums2` into `nums1` as one sorted array. Assume `nums1` has enough space.
 
-10. **Find the Kth Largest Element**
-    - **Problem:** Find the `kth` largest element in an unsorted array.
-    - **Example:** Input: `[3, 2, 1, 5, 6, 4]`, `k = 2`. Output: `5`.
+11. **Move Zeroes to the End of an Array**
+    - **Question:** Given an array `nums`, move all zeroes to the end while maintaining the relative order of non-zero elements.
 
-11. **Product of Array Except Self**
-    - **Problem:** Given an array, return an array where each element is the product of all other elements in the original array except itself.
-    - **Example:** Input: `[1, 2, 3, 4]`. Output: `[24, 12, 8, 6]`.
+12. **Find the Minimum Element in a Rotated Sorted Array**
+    - **Question:** Given a rotated sorted array, find the minimum element.
 
-12. **Subarray with Given Sum**
-    - **Problem:** Given an array and a target sum, find a contiguous subarray that sums to the target.
-    - **Example:** Input: `[1, 2, 3, 7, 5]`, Target: `12`. Output: `[2, 3, 7]`.
+13. **Remove Duplicates from a String**
+    - **Question:** Given a string, remove all duplicate characters while maintaining the original order of the first occurrence.
 
-13. **Find the Peak Element**
-    - **Problem:** An element is a peak if it is greater than or equal to its neighbors. Find a peak element in an array.
-    - **Example:** Input: `[1, 3, 20, 4, 1]`. Output: `20`.
+14. **Find All Pairs with a Given Sum in an Array**
+    - **Question:** Given an array of integers and a target sum, find all pairs of elements that add up to the target sum.
 
-14. **Container with Most Water**
-    - **Problem:** Given an array representing the height of lines, find the container that can hold the most water.
-    - **Example:** Input: `[1,8,6,2,5,4,8,3,7]`. Output: `49`.
+15. **Delete the Middle Element of a Stack**
+    - **Question:** Given a stack, delete the middle element from it.
 
-15. **Find All Pairs with a Given Sum**
-    - **Problem:** Given an array and a sum, find all pairs of elements that add up to the sum.
-    - **Example:** Input: `[1, 2, 3, 4, 3]`, Sum: `6`. Output: `[(2, 4), (3, 3)]`.
+16. **Find the Intersection of Two Arrays**
+    - **Question:** Given two arrays, find their intersection. Each element in the result should be unique.
 
+17. **Find the Union of Two Arrays**
+    - **Question:** Given two arrays, find their union. Each element in the result should be unique.
 
-    <!-- Problem based on nested arrays -->
+18. **Find the Missing Number in an Array of Integers from 1 to n**
+    - **Question:** Given an array of integers containing `n-1` numbers in the range `1` to `n`, find the missing number.
 
+19. **Find the Position of an Element in an Infinite Sorted Array**
+    - **Question:** Given an infinite sorted array and a target value, find the index of the target value.
 
-Very Easy
-Problem: Given the array  [[1, 2], [3, 4]], find the sum of all the numbers.
+20. **Merge Two Arrays Without Extra Space**
+    - **Question:** Given two arrays where the first one has enough space to hold the second one, merge them into a single sorted array.
 
-Output: 10
-Problem: Given the array [[5, 6], [7, 8]], find the number of elements in the array.
+21. **Remove Duplicate Nodes from a Sorted Linked List**
+    - **Question:** Given a sorted singly linked list, remove all duplicate nodes.
 
-Output: 4
-Problem: Given the array [[1, 2, 3], [4, 5, 6]], find the length of the first sub-array.
+22. **Remove the Nth Node from the End of a Linked List**
+    - **Question:** Given a linked list, remove the Nth node from the end of the list.
 
-Output: 3
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the value at position [2][1].
+23. **Search for an Element in a Singly Linked List**
+    - **Question:** Given a singly linked list and a target value, search for the target value in the list.
 
-Output: 6
-Problem: Given the array [[9, 8], [7, 6]], find the maximum value.
+24. **Delete the First Occurrence of a Given Key in a Linked List**
+    - **Question:** Given a linked list and a key, delete the first occurrence of the key from the list.
 
-Output: 9
-Easy
-Problem: Given the array [[1, 2], [3, 4]], transpose it to [[1, 3], [2, 4]].
+25. **Find Common Elements in Two Sorted Arrays**
+    - **Question:** Given two sorted arrays, find all common elements.
 
-Output: [[1, 3], [2, 4]]
-Problem: Given the array [[10, 20], [30, 40]], find the average of all the numbers.
+26. **Find the Longest Subarray Without Repeating Characters**
+    - **Question:** Given an array of characters, find the length of the longest subarray with unique characters.
 
-Output: 25
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], flatten it to [1, 2, 3, 4, 5, 6].
+27. **Find the Second Largest Element in an Array**
+    - **Question:** Given an array, find the second largest element in it.
 
-Output: [1, 2, 3, 4, 5, 6]
-Problem: Given the array [[1], [2], [3]], find the sum of all the first elements.
+28. **Find the Frequency of Each Element in an Array**
+    - **Question:** Given an array of integers, find the frequency of each element.
 
-Output: 6
-Problem: Given the array [[10, 20], [30, 40]], replace each number with its square.
+29. **Find the Missing Number in an Array**
+    - **Question:** Given an array of integers from `0` to `n`, find the missing number.
 
-Output: [[100, 400], [900, 1600]]
-Medium
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the sum of each sub-array and return [3, 7, 11].
+30. **Find the Maximum Element in a Rotated Sorted Array**
+    - **Question:** Given a rotated sorted array, find the maximum element.
 
-Output: [3, 7, 11]
-Problem: Given the array [[1, 2, 3], [4, 5, 6]], find the maximum value in each sub-array and return [3, 6].
+---
 
-Output: [3, 6]
-Problem: Given the array [[1, [2, 3]], [4, [5, 6]]], flatten it to [1, 2, 3, 4, 5, 6].
+### **Medium Level Problems**
 
-Output: [1, 2, 3, 4, 5, 6]
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the average of each sub-array and return [1.5, 3.5, 5.5].
+31. **Find the Closest Pair from Two Sorted Arrays**
+    - **Question:** Given two sorted arrays, find the pair of elements (one from each array) with the smallest difference.
 
-Output: [1.5, 3.5, 5.5]
-Problem: Given the array [[1, 2], [3, 4, 5], [6, 7]], make each sub-array of equal length by padding with 0 and return [[1, 2, 0], [3, 4, 5], [6, 7, 0]].
+32. **Find the Peak Element in an Array**
+    - **Question:** Given an array, find a peak element where the element is greater than or equal to its neighbors.
 
-Output: [[1, 2, 0], [3, 4, 5], [6, 7, 0]]
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the array of sums of elements of each sub-array in reverse order.
+33. **Merge Overlapping Intervals**
+    - **Question:** Given a collection of intervals, merge all overlapping intervals.
 
-Output: [11, 7, 3]
-Problem: Given the array [[1, 2], [3, 4]], return a new array with each number doubled.
+34. **Search in a 2D Matrix**
+    - **Question:** Given a 2D matrix where each row and column is sorted, search for a target value.
 
-Output: [[2, 4], [6, 8]]
-Problem: Given the array [[5, 10, 15], [20, 25, 30]], find the sum of the diagonal elements [5, 25].
+35. **Find All Elements That Appear More Than n/2 Times in an Array**
+    - **Question:** Given an array, find all elements that appear more than `n/2` times.
 
-Output: 30
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the product of all elements.
+36. **Delete a Node in a Linked List Without a Head Pointer**
+    - **Question:** Given a node to be deleted in a linked list, delete it without having access to the head pointer.
 
-Output: 720
-Problem: Given the array [[1, 2], [3, 4]], find the smallest number in the entire array.
+37. **Find the Longest Increasing Subsequence in an Array**
+    - **Question:** Given an array of integers, find the length of the longest increasing subsequence.
 
-Output: 1
-Hard
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], return an array with the sums of each column.
+38. **Merge k Sorted Linked Lists**
+    - **Question:** Given `k` sorted linked lists, merge them into a single sorted linked list.
 
-Output: [9, 12]
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the array sorted by the sum of the sub-arrays in descending order.
+39. **Find the Median of Two Sorted Arrays**
+    - **Question:** Given two sorted arrays, find their median.
 
-Output: [[5, 6], [3, 4], [1, 2]]
-Problem: Given the array [[1, 2], [3, 4, 5], [6]], return the array with the longest sub-array's length.
+40. **Find the Element That Appears Once in an Array**
+    - **Question:** Given an array where every element appears twice except for one, find the element that appears only once.
 
-Output: 3
-Problem: Given the array [[1, [2, [3]]], [4, [5, 6]], [7]], flatten it to [1, 2, 3, 4, 5, 6, 7].
+41. **Search for a Target in a Bitonic Array**
+    - **Question:** Given a bitonic array (increasing then decreasing), find the target value.
 
-Output: [1, 2, 3, 4, 5, 6, 7]
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the sum of all elements in the anti-diagonal [2, 3, 6].
+42. **Find the Minimum Number of Deletions to Make a String a Palindrome**
+    - **Question:** Given a string, find the minimum number of deletions required to make it a palindrome.
 
-Output: 11
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], find the median value of all elements.
+43. **Find the k Closest Elements to a Given Value in an Array**
+    - **Question:** Given a sorted array and a target value, find the `k` closest elements to the target value.
 
-Output: 3.5
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], rotate it 90 degrees clockwise.
+44. **Delete All Nodes That Have Greater Values on the Right Side in a Linked List**
+    - **Question:** Given a linked list, delete nodes that have a greater value on the right side.
 
-Output: [[5, 3, 1], [6, 4, 2]]
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the difference between the largest and smallest numbers.
+45. **Remove Invalid Parentheses from a String**
+    - **Question:** Given a string containing parentheses, remove the minimum number of invalid parentheses to make the string valid.
 
-Output: 5
-Problem: Given the array [[1, [2, 3]], [4, [5, [6]]]], return the number of elements after flattening.
+46. **Search for an Element in a Sorted and Rotated Array Using Binary Search**
+    - **Question:** Given a rotated sorted array, search for a target value using binary search.
 
-Output: 6
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], replace each number with its factorial.
+47. **Find the Intersection Point of Two Linked Lists**
+    - **Question:** Given two linked lists, find the node where they intersect. If they do not intersect, return `null`.
 
-Output: [[1, 2], [6, 24], [120, 720]]
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the sub-array with the highest sum.
+48. **Find the Smallest Window in a String That Contains All Characters of Another String**
+    - **Question:** Given two strings, find the smallest window in the first string that contains all characters of the second string.
 
-Output: [5, 6]
-Problem: Given the array [[1, 2, 3], [4, 5, 6], [7, 8, 9]], return the array with each number incremented by 1.
+49. **Find the Maximum Subarray Sum Using the Divide-and-Conquer Method**
+    - **Question:** Given an array, find the maximum subarray sum using the divide-and-conquer approach.
 
-Output: [[2, 3, 4], [5, 6, 7], [8, 9, 10]]
-Problem: Given the array [[2, 4], [6, 8], [10, 12]], return the array with the average of each sub-array.
+50. **Delete Nodes in a Circular Linked List Based on a Given Condition**
+    - **Question:** Given a circular linked list and a condition, delete nodes that meet the condition.
 
-Output: [3, 7, 11]
-Problem: Given the array [[1, 2], [3, 4], [5, 6]], return the product of all the numbers divided by the number of elements.
+51. **Find the Longest Palindromic Substring**
+    - **Question:** Given a string, find the longest palindromic substring.
 
-Output: 4.8
-Problem: Given the array [[5, 2, 9], [1, 6, 3]], find the second smallest number.
+52.
 
-Output: 2
-Problem: Given the array [[1, [2, [3, [4]]]], [5, 6]], flatten it and return the array sorted in ascending order.
-Output: [1, 2, 3, 4, 5, 6]
+ **Find the Minimum Window Substring Containing All Characters of Another String**
+    - **Question:** Given two strings, find the minimum window substring in the first string that contains all characters of the second string.
+
+53. **Find the Longest Common Prefix in an Array of Strings**
+    - **Question:** Given an array of strings, find the longest common prefix.
+
+54. **Search in a Matrix**
+    - **Question:** Given a 2D matrix where each row is sorted and each column is sorted, search for a target value.
+
+55. **Find the Largest Rectangle in a Histogram**
+    - **Question:** Given a histogram represented by an array of heights, find the area of the largest rectangle that can be formed.
+
+56. **Find the Shortest Path in a Grid with Obstacles**
+    - **Question:** Given a grid with obstacles, find the shortest path from the start to the end.
+
+57. **Remove All Adjacent Duplicates in a String**
+    - **Question:** Given a string, remove all adjacent duplicates.
+
+58. **Find the Unique Paths in a Grid**
+    - **Question:** Given a grid, find the number of unique paths from the top-left corner to the bottom-right corner.
+
+59. **Find the Minimum Path Sum in a Grid**
+    - **Question:** Given a grid, find the minimum path sum from the top-left to the bottom-right.
+
+60. **Find All Anagrams in a String**
+    - **Question:** Given a string and a pattern, find all the start indices of the pattern's anagrams in the string.
+
+---
+
+### **Hard Level Problems**
+
+61. **Find the Longest Substring with At Most K Distinct Characters**
+    - **Question:** Given a string and an integer `k`, find the length of the longest substring with at most `k` distinct characters.
+
+62. **Find the Minimum Number of Steps to Reach a Target Using BFS**
+    - **Question:** Given a starting point and a target in a grid, find the minimum number of steps required to reach the target using BFS.
+
+63. **Find the Maximum Product of Subarray**
+    - **Question:** Given an array of integers, find the maximum product of a contiguous subarray.
+
+64. **Find the Kth Largest Element in an Array**
+    - **Question:** Given an array and an integer `k`, find the `k`th largest element in the array.
+
+65. **Find the Maximum Subarray Sum in a Circular Array**
+    - **Question:** Given a circular array, find the maximum subarray sum.
+
+66. **Find the Longest Increasing Path in a Matrix**
+    - **Question:** Given a matrix, find the length of the longest increasing path.
+
+67. **Find the Minimum Window Substring in a String**
+    - **Question:** Given two strings, find the smallest window in the first string that contains all characters of the second string.
+
+68. **Find the Shortest Path in a Weighted Graph**
+    - **Question:** Given a weighted graph, find the shortest path from a source node to a target node using Dijkstra's algorithm.
+
+69. **Find the Maximum Sum of Non-Adjacent Elements**
+    - **Question:** Given an array, find the maximum sum of non-adjacent elements.
+
+70. **Find the Median of Two Sorted Arrays**
+    - **Question:** Given two sorted arrays, find the median of the two arrays combined.
+
+71. **Find the Longest Repeating Subsequence**
+    - **Question:** Given a string, find the length of the longest repeating subsequence.
+
+72. **Find the Minimum Number of Platforms Required for a Train Station**
+    - **Question:** Given train arrival and departure times, find the minimum number of platforms required to accommodate all trains.
+
+73. **Find the Minimum Path Sum in a Grid with Obstacles**
+    - **Question:** Given a grid with obstacles, find the minimum path sum from the top-left corner to the bottom-right corner.
+
+74. **Find the Maximum Product of a Subset**
+    - **Question:** Given an array, find the maximum product that can be obtained from a subset of the array.
+
+75. **Find the Longest Palindromic Subsequence**
+    - **Question:** Given a string, find the length of the longest palindromic subsequence.
+
+76. **Find the Minimum Number of Steps to Convert One String to Another**
+    - **Question:** Given two strings, find the minimum number of steps required to convert one string to the other using operations like insertion, deletion, and substitution.
+
+77. **Find the Largest Square Submatrix with All 1s**
+    - **Question:** Given a binary matrix, find the size of the largest square submatrix with all 1s.
+
+78. **Find the Maximum Length of a Repeated Subarray**
+    - **Question:** Given two arrays, find the maximum length of a subarray that appears in both arrays.
+
+79. **Find the Longest Substring Without Repeating Characters**
+    - **Question:** Given a string, find the length of the longest substring with unique characters.
+
+80. **Find the Shortest Path in a Maze**
+    - **Question:** Given a maze with obstacles, find the shortest path from the start to the end.
+
+81. **Find the Maximum Area of a Rectangle in a Histogram**
+    - **Question:** Given a histogram represented by heights, find the area of the largest rectangle that can be formed.
+
+82. **Find the Kth Smallest Element in a Sorted Matrix**
+    - **Question:** Given a sorted matrix, find the `k`th smallest element in it.
+
+83. **Find the Longest Consecutive Sequence in an Array**
+    - **Question:** Given an unsorted array, find the length of the longest consecutive elements sequence.
+
+84. **Find the Number of Connected Components in an Undirected Graph**
+    - **Question:** Given an undirected graph, find the number of connected components.
+
+85. **Find the Maximum Subarray Sum Using Dynamic Programming**
+    - **Question:** Given an array, find the maximum subarray sum using dynamic programming.
+
+86. **Find the Minimum Number of Jumps to Reach the End of an Array**
+    - **Question:** Given an array of integers where each element represents the maximum number of steps that can be jumped going forward from that element, find the minimum number of jumps to reach the end.
+
+87. **Find the Longest Common Substring**
+    - **Question:** Given two strings, find the length of the longest common substring.
+
+88. **Find the Longest Increasing Subsequence with Limited Elements**
+    - **Question:** Given an array of integers and a limit, find the longest increasing subsequence with the limit on elements.
+
+89. **Find the Longest Path in a Directed Acyclic Graph (DAG)**
+    - **Question:** Given a DAG, find the length of the longest path.
+
+90. **Find the Minimum Number of Coins Needed for Change**
+    - **Question:** Given a set of coin denominations and an amount, find the minimum number of coins needed to make the amount.
+
+91. **Find the Longest Palindromic Subsequence Using Dynamic Programming**
+    - **Question:** Given a string, find the length of the longest palindromic subsequence using dynamic programming.
+
+92. **Find the Maximum Area of a Rectangle in a Binary Matrix**
+    - **Question:** Given a binary matrix, find the area of the largest rectangle that can be formed.
+
+93. **Find the Maximum Sum of a Subarray with Exactly k Elements**
+    - **Question:** Given an array and an integer `k`, find the maximum sum of any subarray with exactly `k` elements.
+
+94. **Find the Maximum Number of Non-Overlapping Intervals**
+    - **Question:** Given a collection of intervals, find the maximum number of non-overlapping intervals.
+
+95. **Find the Shortest Path in a Graph with Negative Weights**
+    - **Question:** Given a graph with negative weights, find the shortest path from a source node to a target node using the Bellman-Ford algorithm.
+
+96. **Find the Minimum Path Sum in a Triangle**
+    - **Question:** Given a triangle of integers, find the minimum path sum from the top to the bottom.
+
+97. **Find the Number of Islands in a 2D Grid**
+    - **Question:** Given a 2D grid where `1` represents land and `0` represents water, find the number of islands.
+
+98. **Find the Minimum Number of Edges to Add to Make a Graph Connected**
+    - **Question:** Given a graph, find the minimum number of edges that need to be added to make the graph connected.
+
+99. **Find the Maximum Number of Non-Adjacent Subsets**
+    - **Question:** Given an array, find the maximum number of non-adjacent subsets.
+
+100. **Find the Minimum Number of Moves to Sort an Array**
+    - **Question:** Given an array, find the minimum number of moves required to sort the array.
+

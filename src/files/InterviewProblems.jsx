@@ -62,6 +62,57 @@ const InterviewProblems = () => {
     };
   }
   a(10)(20)(30);
+
+  // promises
+  const promiseOne = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // console.log("async taskis completed");
+      resolve();
+    }, 1000);
+  });
+  promiseOne.then((res) => {
+    // console.log("promise is consumed!");
+  });
+
+  // another way to do the same process no need to store promise in a vriable like promiseOne
+
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Async task 2 is completed! ");
+      resolve();
+    }, 1000);
+  }).then(() => {
+    console.log("Promise is consumed!! ");
+  });
+
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ username: "himan07", email: "himan9714@gmail.com" });
+    }, 1000);
+  }).then((res) => {
+    console.log("this is data from promise: ", res.username, res.email);
+  });
+
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let error = false;
+      if (!error) {
+        resolve({ username: "himan07", email: "himan9714@gmail.com" });
+      } else {
+        reject("Error: Something went wrong!");
+      }
+    }, 1000);
+  })
+    .then((userDetails) => {
+      return userDetails.username;
+    })
+    .then((response) => {
+      console.log("userName: ", response);
+    })
+    .catch((error) => {
+      console.log("error", error);
+    });
+
   return <div>InterviewProblems</div>;
 };
 

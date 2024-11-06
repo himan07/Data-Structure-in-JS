@@ -10,6 +10,8 @@ import ArrMergeWhile from "./files/ArrMergeWhile.jsx";
 import ArraySorting from "./files/arraySorting.jsx";
 import JavaScriptTut from "./files/JavaScriptTut.jsx";
 import InterviewProblems from "./files/InterviewProblems.jsx";
+import HundredProb from "./files/HundredProb.jsx";
+import Counter from "./files/Counter.jsx";
 
 const App = () => {
   return (
@@ -28,10 +30,12 @@ const App = () => {
       {/* <MeregeTwoArray /> */}
       {/* <ArrMergeWhile /> */}
       {/* <ArraySorting /> */}
-      <InterviewProblems />
+      {/* <InterviewProblems /> */}
+      {/* <HundredProb /> */}
       {/* <SearchEl /> */}
       {/* <Problem /> */}
-      <CircleInCircle />
+      {/* <CircleInCircle /> */}
+      <Counter />
       {/* <JavaScriptTut /> */}
     </div>
   );
